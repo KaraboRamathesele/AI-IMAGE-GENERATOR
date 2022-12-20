@@ -4,7 +4,8 @@
   "description": "<h1>About:</h1>\r <p>\r     This project was build to practice Api fetching with JavaScript.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "dev": "nodemon index",
   },
   "repository": {
     "type": "git",
