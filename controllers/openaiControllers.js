@@ -10,9 +10,15 @@ const openai = new OpenAIApi(configuration);
 
 //OpenAI library will give a promise
 const generateImage = async (request, response) => {
+  const { prompt, size } = request.body;
+
+  //Add conditional for size
+  const imageSize =
+    size === "small" ? "256x256" : size === "medium" ? "512x512" : "1024x1024";
+
   try {
     const response = await openai.createImage({
-      prompt: "Fairy with long hair",
+      prompt,
       n: 1, //number of images
       size: "512x512",
     });
