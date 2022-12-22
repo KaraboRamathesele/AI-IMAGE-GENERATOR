@@ -18,3 +18,5 @@
     <li>Choose a size<li>
     <li>Click on Generate for an image<li>
 </ol>
+
+https://github.com/openai/openai-node
