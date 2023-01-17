@@ -16,4 +16,10 @@ function onSubmit(e) {
   generateImageRequest(prompt, size);
 }
 
+async function generateImageRequest(prompt, size) {}
+
+function showSpinner() {
+  document.querySelector(".spinner").classList.add("show");
+}
+
 document.querySelector("#image-form").addEventListener("submit", onSubmit);
